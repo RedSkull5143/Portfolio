@@ -261,7 +261,7 @@ function Navbar() {
           <a href="/Om_Shinde_Resume.pdf" target="_blank" className="btn-outline" style={{ fontSize: "0.8rem", padding: "0.5rem 1rem" }}>
             Resume
           </a>
-          <a href="mailto:omshinde5143@gmail.com" className="btn-primary" style={{ fontSize: "0.8rem", padding: "0.5rem 1rem" }}>
+          <a href="mailto:omshinde5143@gmail.com" className="btn-outline" style={{ fontSize: "0.8rem", padding: "0.5rem 1rem" }}>
             Email Me
           </a>
         </div>
@@ -643,8 +643,8 @@ function Contact() {
         ))}
       </div>
 
-      <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
-        <a href="https://www.linkedin.com/in/shindeom" target="_blank" rel="noreferrer" className="btn-outline">
+      <div className="contact-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, auto))", gap: "1rem", marginBottom: "2rem" }}>
+      <a href="https://www.linkedin.com/in/shindeom" target="_blank" rel="noreferrer" className="btn-outline">
           <LinkedinIcon /> LinkedIn
         </a>
         <a href="https://github.com/RedSkull5143" target="_blank" rel="noreferrer" className="btn-outline">

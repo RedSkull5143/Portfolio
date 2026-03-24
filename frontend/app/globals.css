@@ -213,7 +213,7 @@ h1, h2, h3, h4 {
   transition: all 0.2s;
   border: 1px solid var(--border);
   justify-content: center;
-    width: 100%;              /* 👈 fills grid cell */
+    /* width: 100%;               */
 }
 .btn-outline:hover {
   border-color: var(--accent);
