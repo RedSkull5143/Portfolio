@@ -326,7 +326,7 @@ function Hero() {
       </div>
 
       {/* CTA buttons */}
-      <div className="animate-fade-in-up delay-400 hero-cta" style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem", marginBottom: "3.5rem" }}>
+      <div className="animate-fade-in-up delay-400 hero-cta"style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, auto))", gap: "1rem", maxWidth: "100%", margin: "0 auto 2.5rem" }} >        
         <a href="https://github.com/RedSkull5143" target="_blank" rel="noreferrer" className="btn-outline">
           <GithubIcon /> GitHub
         </a>
@@ -644,7 +644,7 @@ function Contact() {
       </div>
 
       <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
-        <a href="https://www.linkedin.com/in/shindeom" target="_blank" rel="noreferrer" className="btn-primary">
+        <a href="https://www.linkedin.com/in/shindeom" target="_blank" rel="noreferrer" className="btn-outline">
           <LinkedinIcon /> LinkedIn
         </a>
         <a href="https://github.com/RedSkull5143" target="_blank" rel="noreferrer" className="btn-outline">
