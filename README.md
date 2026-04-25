@@ -1,28 +1,54 @@
-# Om Shinde — Portfolio
+# <p align="center">✨ Om Shinde: Automation Engineer ✨</p>
 
-Personal portfolio website for Om Shinde, Automation Engineer.
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white" />
+  <img src="https://img.shields.io/badge/RestAssured-blue?style=for-the-badge&logo=rest-assured&logoColor=white" />
+  <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
+</p>
 
-Built with **Next.js 14 + TypeScript + TailwindCSS**, inspired by the design of Kashish Lalwani's portfolio.
+<p align="center">
+  <b>Personal Portfolio of Om Shinde — Automation Engineer.</b><br>
+  <i>Building scalable automation systems, not just scripts.</i>
+</p>
+
+---
+
+## 🌟 The Vision
+My portfolio isn't just a list of links; it's a showcase of **Engineering ownership**. From architecting RAG-based intelligence for frameworks to building zero-touch OTP automation, I focus on eliminating manual effort through high-craft, reliable code.
+
+---
+
+## 🚀 Core Capabilities
+
+### 🧠 AI-Powered Automation
+Integrating LLMs (Llama-3, Groq) to record manual interactions and auto-generate production-ready test cases, bridging the gap between manual and automated testing.
+
+### 🛡️ Framework Engineering
+Building scalable, data-driven frameworks from scratch using **Java, Selenium, and RestAssured**, with a focus on stability and high-speed execution.
+
+### 📱 Intelligent Tooling
+Developing custom utilities like SMS reading apps for OTP handling and RAG systems for framework-specific Q&A to boost team productivity.
 
 ---
 
 ## ✨ Featured Projects
 
-- **🔥 QA Forge**: Enterprise-grade AI manual test case generator for Jira. [GitHub](https://github.com/RedSkull5143/qa-forge)
-- **🤖 AI-Powered Test Recorder**: Intelligent system for recording and auto-generating Selenium TestNG cases. [GitHub](https://github.com/RedSkull5143/demoqa-ai-recorder)
-- **🧠 RAG Framework Assistant**: AI assistant grounded in framework source code via Retrieval-Augmented Generation. [GitHub](https://github.com/RedSkull5143/framework-ai-assistant)
+- **🔥 [QA Forge](https://github.com/RedSkull5143/qa-forge)**: Enterprise-grade AI manual test case generator for Jira.
+- **🤖 [AI-Powered Test Recorder](https://github.com/RedSkull5143/demoqa-ai-recorder)**: Intelligent system for recording and auto-generating Selenium TestNG cases.
+- **🧠 [RAG Framework Assistant](https://github.com/RedSkull5143/framework-ai-assistant)**: AI assistant grounded in framework source code via Retrieval-Augmented Generation.
 - **📱 Zero-Touch OTP Automation**: Autonomous OTP handling for authentication-heavy workflows.
 
 ---
 
-## 🚀 Run Locally
+## ⚙️ Setup & Installation
 
 ### Prerequisites
-- Node.js 18+ installed ([https://nodejs.org](https://nodejs.org))
+- Node.js 18+
 - npm or yarn
 
 ### Steps
-
 ```bash
 # 1. Navigate to the frontend directory
 cd frontend
@@ -34,82 +60,18 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+---
+
+## 👤 Author
+
+**Om Shinde**  
+*SDET*
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RedSkull5143) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shindeom)
 
 ---
 
-## 📁 Project Structure
-
-```
-portfolio/
-│
-├── frontend/
-│   ├── app/
-│   │   ├── layout.tsx         ← HTML head, metadata, fonts
-│   │   ├── page.tsx           ← Entire portfolio (all sections)
-│   │   └── globals.css        ← Global styles, animations, CSS variables
-│   │
-│   ├── public/
-│   │   ├── images/
-│   │   │   └── profile.jpg    ← Add your profile photo here
-│   │   └── Om_Shinde_Resume.pdf  ← Add your resume PDF here
-│   │
-│   ├── package.json
-│   ├── tsconfig.json
-│   ├── tailwind.config.ts
-│   ├── postcss.config.js
-│   └── next.config.mjs
-│
-└── README.md
-```
-
----
-
-## 🖼️ Adding Your Profile Photo
-
-Place your photo at:
-```
-frontend/public/images/profile.jpg
-```
-
----
-
-## 📄 Adding Your Resume PDF
-
-Place your resume PDF at:
-```
-frontend/public/Om_Shinde_Resume.pdf
-```
-
----
-
-## 🏗️ Build for Production
-
-```bash
-cd frontend
-npm run build
-npm start
-```
-
----
-
-## 🌐 Deploy to Vercel (Free)
-
-1. Push this repo to GitHub
-2. Go to [vercel.com](https://vercel.com) → New Project
-3. Import your GitHub repo
-4. Set **Root Directory** to `frontend`
-5. Click Deploy ✅
-
----
-
-## ✏️ Customize Content
-
-All portfolio data is in `frontend/app/page.tsx` at the top in the **DATA** section:
-- `STATS` — hero stat numbers
-- `EXPERIENCES` — work history
-- `PROJECTS` — project cards
-- `SKILLS` — skill categories
-- `AWARDS` — awards list
-
-Just edit those arrays and the site updates instantly.
+<p align="center">
+  Proudly built with ❤️ to showcase the future of QA.
+</p>
