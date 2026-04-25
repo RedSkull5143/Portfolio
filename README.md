@@ -6,6 +6,15 @@ Built with **Next.js 14 + TypeScript + TailwindCSS**, inspired by the design of 
 
 ---
 
+## ✨ Featured Projects
+
+- **🔥 QA Forge**: Enterprise-grade AI manual test case generator for Jira. [GitHub](https://github.com/RedSkull5143/qa-forge)
+- **🤖 AI-Powered Test Recorder**: Intelligent system for recording and auto-generating Selenium TestNG cases. [GitHub](https://github.com/RedSkull5143/demoqa-ai-recorder)
+- **🧠 RAG Framework Assistant**: AI assistant grounded in framework source code via Retrieval-Augmented Generation. [GitHub](https://github.com/RedSkull5143/framework-ai-assistant)
+- **📱 Zero-Touch OTP Automation**: Autonomous OTP handling for authentication-heavy workflows.
+
+---
+
 ## 🚀 Run Locally
 
 ### Prerequisites

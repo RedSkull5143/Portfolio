@@ -53,6 +53,22 @@ const EXPERIENCES = [
 
 const PROJECTS = [
   {
+    title: "QA Forge: The Digital Hammer of Quality",
+    status: "Public",
+    type: "AI / Automation",
+    tech: ["FastAPI", "React", "Groq Llama-3", "AWS Cognito", "Jira API", "TypeScript"],
+    description:
+      "Enterprise-grade AI manual test case generator for Jira. Automates the creation of test cases from Jira ticket descriptions using Groq LLMs, with deep Jira integration for subtask creation and Excel exports.",
+    bullets: [
+      "Built a 'Neural Analysis Engine' using Groq's Llama-3 to analyze Jira descriptions and identify hidden edge cases.",
+      "Implemented 'Ironclad Security' using AWS Cognito Hosted UI and RSA-signature verification for all API calls.",
+      "Designed 'Deep Jira Integration' for smart fetching, auto-subtask creation, and Excel injection directly into tickets.",
+      "Crafted a premium 'Digital Forge' UI with glassmorphism, Framer Motion animations, and universal responsiveness.",
+    ],
+    github: "https://github.com/RedSkull5143/qa-forge",
+    featured: true,
+  },
+  {
     title: "AI-Powered Test Recorder & Code Generator",
     status: "In Progress",
     type: "AI / Automation",
