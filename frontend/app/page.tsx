@@ -116,21 +116,21 @@ const PROJECTS = [
     tech: ["Java", "Selenium", "Android", "Firebase", "TestNG"]
   },
   {
-  title: "Geofencing-Based Hospitality Experience System",
-  type: "Location Intelligence + Web App",
-  status: "Completed",
-  featured: true,
-  github: "#",
-  description: "Developed a geofencing-based system to deliver personalized, location-aware services within a hotel ecosystem. Enabled automated guest engagement using GPS-triggered events to enhance user experience and operational efficiency.",
-  bullets: [
-    "Designed GPS-based geofence triggers for automated check-in/check-out reminders",
-    "Delivered real-time promotional alerts and nearby facility recommendations",
-    "Built a role-based admin panel to manage geofence zones and user activity",
-    "Implemented live tracking and event logging for monitoring guest movement",
-    "Improved customer engagement through context-aware notifications"
-  ],
-  tech: ["JavaScript", "GPS", "Geofencing", "Web App", "Admin Dashboard"]
-}
+    title: "Geofencing-Based Hospitality Experience System",
+    type: "Location Intelligence + Web App",
+    status: "Completed",
+    featured: true,
+    github: "#",
+    description: "Developed a geofencing-based system to deliver personalized, location-aware services within a hotel ecosystem. Enabled automated guest engagement using GPS-triggered events to enhance user experience and operational efficiency.",
+    bullets: [
+      "Designed GPS-based geofence triggers for automated check-in/check-out reminders",
+      "Delivered real-time promotional alerts and nearby facility recommendations",
+      "Built a role-based admin panel to manage geofence zones and user activity",
+      "Implemented live tracking and event logging for monitoring guest movement",
+      "Improved customer engagement through context-aware notifications"
+    ],
+    tech: ["JavaScript", "GPS", "Geofencing", "Web App", "Admin Dashboard"]
+  }
 ];
 
 const SKILLS = [
@@ -203,9 +203,9 @@ function MediumIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 1043.63 592.71" fill="currentColor">
       <g>
-        <path d="M588.67 296.35c0 163.69-131.61 296.36-294.34 296.36C131.6 592.71 0 460.04 0 296.35 0 132.66 131.6 0 294.33 0c162.73 0 294.34 132.66 294.34 296.35z"/>
-        <ellipse cx="780.54" cy="296.35" rx="122.28" ry="296.35"/>
-        <ellipse cx="965.89" cy="296.35" rx="77.74" ry="296.35"/>
+        <path d="M588.67 296.35c0 163.69-131.61 296.36-294.34 296.36C131.6 592.71 0 460.04 0 296.35 0 132.66 131.6 0 294.33 0c162.73 0 294.34 132.66 294.34 296.35z" />
+        <ellipse cx="780.54" cy="296.35" rx="122.28" ry="296.35" />
+        <ellipse cx="965.89" cy="296.35" rx="77.74" ry="296.35" />
       </g>
     </svg>
   );
@@ -336,13 +336,18 @@ function Hero() {
 
       {/* Specialty chips */}
       <div className="animate-fade-in-up delay-300" style={{ display: "flex", flexWrap: "wrap", gap: "0.625rem", marginBottom: "2.5rem" }}>
-        {["Java · Selenium · TestNG", "API Automation · RestAssured", "RAG & LLM Integration", "CI/CD · Jenkins · GitHub Actions", "AI-Powered Test Generation"].map((s) => (
+        {[
+          "Java · Selenium · TestNG",
+          "API Automation · RestAssured",
+          "RAG & LLM Integration",
+          "CI/CD · Jenkins · GitHub Actions"
+        ].map((s) => (
           <span key={s} style={{ fontSize: "0.8rem", color: "#71717a", background: "rgba(255,255,255,0.03)", border: "1px solid #27272a", borderRadius: "6px", padding: "0.3rem 0.75rem" }}>{s}</span>
         ))}
       </div>
 
       {/* CTA buttons */}
-      <div className="animate-fade-in-up delay-400 hero-cta"style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, auto))", gap: "1rem", maxWidth: "100%", margin: "0 auto 2.5rem" }} >        
+      <div className="animate-fade-in-up delay-400 hero-cta" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, auto))", gap: "1rem", maxWidth: "100%", margin: "0 auto 2.5rem" }} >
         <a href="https://github.com/RedSkull5143" target="_blank" rel="noreferrer" className="btn-outline">
           <GithubIcon /> GitHub
         </a>
@@ -356,7 +361,7 @@ function Hero() {
           Resume
         </a>
         <a href="#experience" className="btn-outline">
-          View Experience 
+          View Experience
         </a>
         <a href="#projects" className="btn-outline">
           View Projects
@@ -527,8 +532,8 @@ function Projects() {
                 {proj.type} · {proj.status === "In Progress" ? "🔨 In Progress" : "Public"}
               </span>
               <a href={proj.github} target="_blank" rel="noreferrer" className="btn-outline" style={{ flexShrink: 0, fontSize: "0.8rem", padding: "0.45rem 0.9rem" }}>
-            <GithubIcon /> GitHub
-          </a>
+                <GithubIcon /> GitHub
+              </a>
             </div>
 
             <h3 style={{ fontFamily: "'Sora', sans-serif", fontSize: "1rem", fontWeight: 700, marginBottom: "0.75rem" }}>{proj.title}</h3>
@@ -660,7 +665,7 @@ function Contact() {
       </div>
 
       <div className="contact-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, auto))", gap: "1rem", marginBottom: "2rem" }}>
-      <a href="https://www.linkedin.com/in/shindeom" target="_blank" rel="noreferrer" className="btn-outline">
+        <a href="https://www.linkedin.com/in/shindeom" target="_blank" rel="noreferrer" className="btn-outline">
           <LinkedinIcon /> LinkedIn
         </a>
         <a href="https://github.com/RedSkull5143" target="_blank" rel="noreferrer" className="btn-outline">
