@@ -252,9 +252,24 @@ h1, h2, h3, h4 {
   color: #93c5fd;
 }
 
+/* Writing row hover */
+.write-row {
+  transition: all 0.2s ease;
+}
+.write-row:hover .tag {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
   .desktop-nav { display: none !important; }
+
+  /* Process grid → single col */
+  .process-grid {
+    grid-template-columns: 1fr !important;
+  }
+
 
   /* Hero name */
   .hero-name {

@@ -7,10 +7,59 @@ import { useState, useEffect } from "react";
 const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
+  { label: "Process", href: "#process" },
   { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Awards", href: "#awards" },
+  { label: "Writing", href: "#writing" },
   { label: "Contact", href: "#contact" },
+];
+
+const PROCESS = [
+  {
+    n: "01",
+    title: "Understand the system first",
+    body: "Before writing a single test, I map the real user flows, the auth boundaries, and the parts of the app that break most. Good automation starts as good product understanding — not as code.",
+  },
+  {
+    n: "02",
+    title: "Design for reuse, not for speed",
+    body: "I build frameworks around the Page Object Model, shared utilities, and data-driven strategies. The goal is that the tenth test costs a fraction of the first — and that a junior can extend it without breaking things.",
+  },
+  {
+    n: "03",
+    title: "Kill flakiness at the root",
+    body: "Flaky tests destroy trust in automation. I isolate environment state, add deterministic waits and retries, and treat every intermittent failure as a real defect in the harness until proven otherwise.",
+  },
+  {
+    n: "04",
+    title: "Wire it into the pipeline",
+    body: "Automation that runs on a laptop is a demo. I integrate suites into Jenkins / GitHub Actions so they run on every release, surface clear reports, and give the team real confidence to ship faster.",
+  },
+  {
+    n: "05",
+    title: "Let AI remove the boilerplate",
+    body: "I use LLMs and RAG deliberately — grounded in the actual framework source — to generate POM-aligned test code, catch edge cases, and hand testers superpowers without hallucinated methods.",
+  },
+];
+
+const WRITING = [
+  {
+    title: "Building an API automation framework from scratch",
+    blurb: "The architecture decisions behind a scalable RestAssured + TestNG framework.",
+    tag: "Automation",
+    date: "Coming soon",
+  },
+  {
+    title: "Grounding LLMs in your test framework with RAG",
+    blurb: "Why retrieval beats fine-tuning for hallucination-free test-code generation.",
+    tag: "AI",
+    date: "Coming soon",
+  },
+  {
+    title: "Killing flaky tests: a field guide",
+    blurb: "Practical patterns for deterministic, trustworthy test suites in CI.",
+    tag: "Quality",
+    date: "Coming soon",
+  },
 ];
 
 const STATS = [
@@ -427,10 +476,13 @@ function About() {
       <div className="about-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}>
         <div>
           <p style={{ color: "#a1a1aa", lineHeight: 1.8, marginBottom: "1.25rem" }}>
-            I&apos;m an Automation Engineer at QualityKiosk Technologies, Mumbai — focused on building automation frameworks that are scalable, intelligent, and production-ready. My work sits at the intersection of test automation, AI tooling, and CI/CD engineering.
+            I&apos;m an Automation Engineer at QualityKiosk Technologies, Mumbai, working at the intersection of <span style={{ color: "#ededed" }}>test automation, AI tooling, and CI/CD engineering</span>. My work is mostly about one thing: taking the manual, repetitive, error-prone parts of quality assurance and turning them into systems that just run.
+          </p>
+          <p style={{ color: "#a1a1aa", lineHeight: 1.8, marginBottom: "1.25rem" }}>
+            I graduated with a B.Tech in Computer Science (CGPA 8.9) from D. Y. Patil College of Engineering &amp; Technology, Kolhapur in 2024. Since then I&apos;ve built API frameworks from scratch, shipped a fully autonomous OTP-handling pipeline, and grown increasingly obsessed with how LLMs and RAG can make testers dramatically more productive without sacrificing correctness.
           </p>
           <p style={{ color: "#a1a1aa", lineHeight: 1.8 }}>
-            I graduated with a B.Tech in Computer Science (CGPA 8.9) from D. Y. Patil College of Engineering &amp; Technology, Kolhapur in 2024. I enjoy solving hard automation problems and exploring how LLMs can make testers more productive.
+            I like hard automation problems, clean abstractions, and the quiet satisfaction of a green pipeline that a whole team trusts.
           </p>
         </div>
 
@@ -635,6 +687,60 @@ function Awards() {
   );
 }
 
+/* ─── PROCESS ─── */
+function Process() {
+  return (
+    <section id="process" className="section-inner" style={{ padding: "3rem 1.5rem", maxWidth: "1100px", margin: "0 auto" }}>
+      <p className="section-label" style={{ marginBottom: "1rem" }}>How I Work</p>
+      <h2 className="section-heading" style={{ fontFamily: "'Sora', sans-serif", fontSize: "clamp(1.5rem, 3vw, 2.25rem)", fontWeight: 700, marginBottom: "3rem" }}>
+        Five principles behind every framework I build
+      </h2>
+
+      <div className="process-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem" }}>
+        {PROCESS.map((p) => (
+          <div key={p.n} className="card" style={{ display: "flex", gap: "1.25rem", alignItems: "flex-start" }}>
+            <div style={{ fontFamily: "'Sora', sans-serif", fontSize: "1.75rem", fontWeight: 800, color: "#3b82f6", lineHeight: 1, flexShrink: 0 }}>{p.n}</div>
+            <div>
+              <h3 style={{ fontFamily: "'Sora', sans-serif", fontSize: "1.05rem", fontWeight: 700, marginBottom: "0.5rem" }}>{p.title}</h3>
+              <p style={{ color: "#a1a1aa", fontSize: "0.875rem", lineHeight: 1.7 }}>{p.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+/* ─── WRITING ─── */
+function Writing() {
+  return (
+    <section id="writing" className="section-inner" style={{ padding: "3rem 1.5rem", maxWidth: "1100px", margin: "0 auto" }}>
+      <p className="section-label" style={{ marginBottom: "1rem" }}>Writing</p>
+      <h2 className="section-heading" style={{ fontFamily: "'Sora', sans-serif", fontSize: "clamp(1.5rem, 3vw, 2.25rem)", fontWeight: 700, marginBottom: "3rem" }}>
+        Notes on testing, frameworks &amp; AI
+      </h2>
+
+      <div style={{ display: "flex", flexDirection: "column", gap: "1rem", marginBottom: "2rem" }}>
+        {WRITING.map((w, i) => (
+          <a key={i} href="https://medium.com/@omshinde5143" target="_blank" rel="noreferrer" className="card write-row" style={{ display: "flex", alignItems: "center", gap: "1.25rem", textDecoration: "none", flexWrap: "wrap" }}>
+            <span style={{ fontFamily: "'Sora', sans-serif", fontSize: "0.9rem", color: "#52525b", fontWeight: 700, flexShrink: 0 }}>0{i + 1}</span>
+            <div style={{ flex: 1, minWidth: "220px" }}>
+              <div style={{ fontFamily: "'Sora', sans-serif", fontSize: "1rem", fontWeight: 700, marginBottom: "0.25rem", color: "#ededed" }}>{w.title}</div>
+              <p style={{ color: "#a1a1aa", fontSize: "0.85rem" }}>{w.blurb}</p>
+            </div>
+            <span className="tag" style={{ flexShrink: 0 }}>{w.tag}</span>
+            <span style={{ fontSize: "0.75rem", color: "#71717a", flexShrink: 0 }}>{w.date}</span>
+          </a>
+        ))}
+      </div>
+
+      <a href="https://medium.com/@omshinde5143" target="_blank" rel="noreferrer" className="btn-outline" style={{ fontSize: "0.85rem" }}>
+        <MediumIcon /> Read on Medium
+      </a>
+    </section>
+  );
+}
+
 /* ─── CONTACT ─── */
 function Contact() {
   return (
@@ -699,8 +805,10 @@ export default function Home() {
       <Hero />
       <About />
       <Experience />
+      <Process />
       <Projects />
       <Skills />
+      <Writing />
       <Awards />
       <Contact />
       <Footer />
