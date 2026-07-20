@@ -118,6 +118,24 @@ const PROJECTS = [
     featured: true,
   },
   {
+    title: "DataSync: Enterprise Policy Reconciliation Engine",
+    status: "Private (Enterprise)",
+    type: "Backend / Data Engineering",
+    tech: ["Java", "Spring Boot", "React", "Vite", "OAuth2", "PostgreSQL", "Excel API", "RestAssured", "Selenium", "Docker", "Jenkins"],
+    description:
+      "Mission-critical policy reconciliation platform for enterprise insurance systems. Performs field-level data validation and reconciliation between legacy and modern policy databases, with real-time comparison analytics and automated reporting.",
+    bullets: [
+      "Architected a 'JsonPath-Powered Mapping Engine' supporting 1,549+ field instances across POLICY, MEMBER, UNDERWRITING, and RIDER business domains.",
+      "Built a 'Multi-Type Comparison Engine' with 5 intelligent comparison modes (EXACT, CASE_INSENSITIVE, NUMERIC, DATE, BOOLEAN) for heterogeneous data validation.",
+      "Engineered 'HAL-Link Resolver' with parallel HTTP calls, exponential backoff retry logic, and connection pooling for high-throughput API interactions.",
+      "Crafted 'Real-Time Dashboard' using React + Vite with drill-down analytics, field-level discrepancy tracking, WebSocket updates, and Excel export for audit compliance.",
+      "Implemented 'Distributed OAuth2 Client-Credentials Flow' for secure inter-service authentication and API gateway integration.",
+      "Containerized pipeline using Docker + Jenkins with automated test suites (RestAssured, Selenium) and CI/CD deployment gates.",
+    ],
+    impact: "Eliminated manual data validation bottleneck, reducing reconciliation time from 40 hours to 4 hours per cycle. 100% audit-grade accuracy.",
+    featured: true,
+  },
+  {
     title: "AI-Powered Test Recorder & Code Generator",
     status: "In Progress",
     type: "AI / Automation",
